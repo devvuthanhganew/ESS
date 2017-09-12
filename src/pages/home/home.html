@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+   <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>-->
+    <ion-title>Page de connexion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+  <ion-label color="primary" stacked>Adresse email :</ion-label>
+  <ion-input id="inputEmail" [(ngModel)]="connection_email" type="email"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary" stacked>Mot de passe :</ion-label>
+  <ion-input id="inputPWD" [(ngModel)]="connection_pwd" type="password"></ion-input>
+  </ion-item>
+<br/>  
+  <button type="submit" ion-button full (click)="doConnection();">Connexion</button>
+ 	<button type="submit" ion-button full (Click)="MDPOublie()">Mot de passe oublié?</button>
+</ion-content>
