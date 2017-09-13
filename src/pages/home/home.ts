@@ -18,20 +18,20 @@ export class HomePage {
 	  	   	   
 		if (var_email==undefined || var_email=="")
 		{
-			alert("Veuillez renseigner l'adresse email");
+			alert("The email address is missing");
 			return;
 		}
 		
 		if (validateEmail(var_email)==false)
 		{
-			alert("invalid email address")
+			alert("Invalid email address")
 			this.connection_email="";
 			return;
 		}
 	
 		if (var_pwd==undefined || var_pwd=="")
 			{
-				alert("Veuillez renseigner le mot de passe");
+				alert("The password is missing");
 			}
 		else
 			{
@@ -41,7 +41,7 @@ export class HomePage {
 			
 		}
   
-  MDPOublie(){
+  PWDForgotten(){
 	  
 	  alert("ok");
   }
