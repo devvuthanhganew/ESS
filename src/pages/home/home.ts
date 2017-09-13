@@ -11,7 +11,12 @@ import { App, ViewController } from 'ionic-angular';
 export class HomePage {
  connection_email: string;
  connection_pwd: string;
-  constructor(public navCtrl: NavController){}
+ 
+  constructor(
+		public navCtrl: NavController,
+	  public viewCtrl: ViewController,
+    public appCtrl: App
+  ){}
   
   doConnection(){
 	  let var_email=this.connection_email;
