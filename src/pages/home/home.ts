@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SecondPage } from '../PagePerso/PagePerso';
+import { App, ViewController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -35,7 +36,11 @@ export class HomePage {
 			}
 		else
 			{
-				this.navCtrl.push(SecondPage);
+				//this.navCtrl.push(SecondPage);
+        
+        this.viewCtrl.dismiss();
+        this.navCtrl.push(SecondPage);
+        
 				//alert("Email = "+var_email+ " PWD = "+var_pwd);
 			}
 			
