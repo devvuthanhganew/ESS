@@ -13,13 +13,9 @@ export class HomePage {
   constructor(public navCtrl: NavController){}
   
   doConnection(){
-	  var var_email=this.connection_email;
-	  var var_pwd=this.connection_pwd;
-	  	   
-		   //temp
-		   var_email="abc@fgh.aa";
-		   var_pwd="aaaaa";
-		   
+	  let var_email=this.connection_email;
+	  let var_pwd=this.connection_pwd;
+	  	   	   
 		if (var_email==undefined || var_email=="")
 		{
 			alert("Veuillez renseigner l'adresse email");
@@ -55,6 +51,6 @@ export class HomePage {
 
   
 function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
