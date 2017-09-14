@@ -6,10 +6,13 @@ import { HomePage } from '../home/home';
 @Component({
   selector: 'PagePerso',
   templateUrl: 'PagePerso.html',
+  template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
 export class SecondPage {
   public firstParam;
   public secondParam;
+  
+  public rootPage: any = HomePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams){
 
