@@ -13,24 +13,16 @@ export class HomePage {
 	public connection_email: string;
 	public connection_pwd: string;
  
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public $http: ng.IHttpService) {
 	 const sage_token='010000000000000000000000F700000080F61C9842D7E049670CDE72387AD42EE61E7777C0D8AC1CBC9A2C014740DAFBFB239697357B648D27814A1194F6AB8F63F6208293A39E23D08988D974614ECA7D5E6FBEBBE0F86B338E8CCF0F7A4DE771C7340C98872555AB408C052D46C02BF7717F872F6D3A9674C4A02B4BFF8E631F950EF845B96FA616F71BBCC52A56205FCC40B2BB85563C25F91B46CE2DF4A1A6A571A0C63B6ACA99F020666F24ADF684E00E0B5C2181EE64DDF0EECD0C93AB059AAECAC6D238F27B5D63366046CAB29900D77CCD8B45D5C104EBD7C6385C520A6C3C75ECA3E910A27D60B64A1CA8CD30CF12477696A2C5C6306C6638FF34E11BEE7A87E5A5BB43';
 	 const url_authentication='http://win-9u040a2kpbv:83/adelerh/server/soap.l1000?wsdl=Sage1000Authentication';
 	 const url_ws='http://win-9u040a2kpbv:83/adelerh/server/soap.l1000?wsdl=WebServiceRessourcesHumaines';
-	  
-  
   }
 
   doConnection(){
 	  let var_email=this.connection_email;
 	  let var_pwd=this.connection_pwd;
-	  
-	  
-	  //temp
-	  var_email='DALA@GMT-CONSEIL.FR';
-	  var_pwd='DALA';
-	  //temp
-	  
+	   
 		if (var_email==undefined || var_email=="")
 		{
 			alert("Please mention the email address");
