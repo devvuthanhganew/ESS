@@ -118,7 +118,7 @@ var req = {
 
    }
 
-   $http(req).then(OnSuccess, OnError);
+   $.ajax(req).then(OnSuccess, OnError);
 }
 		
 function OnSuccess(data, status)
