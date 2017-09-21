@@ -60,7 +60,7 @@ export class HomePage {
 	  //this.connection_pwd='';
   } //doConnection
   
-  PWDForgotten(){
+  MDPOublie(){
 	  alert("ok")
   } //MDPOublie
   
@@ -111,6 +111,7 @@ var req = {
 	method: 'POST',
 	url: url_autentication2,
 	data: soapRequest(),
+	datatype: "text/xml; charset=utf-8",
 	headers: {
 	  'Content-Type': undefined
 	}
