@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {PagePersonnellePage} from '../page-personnelle/page-personnelle'
+import {Http} from '@angular/http';
 
 declare var atlan: any; 
 
