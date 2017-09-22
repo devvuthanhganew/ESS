@@ -51,7 +51,7 @@ export class HomePage {
 	  //this.connection_pwd='';
   } //doConnection
   
-  MDPOublie(){
+  PWDForgotten(){
 	  alert("ok")
   } //MDPOublie
   
