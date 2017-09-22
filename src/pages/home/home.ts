@@ -105,15 +105,18 @@ let query = {
 	url: url_autentication2,
 	data: soapRequest(),
 	datatype: "text/xml; charset=utf-8",
+  headers: {"Content-Type": "application/xml"}
   }
 
-   $http.post(query)
+   this.http.post(query)
    .success(function (query) {
-	   $scope.PostDataResponse = query["data"];
+     alert("success");
+	   //$scope.PostDataResponse = query["data"];
    })
    .error(function (query) {
-	   $scope.ResponseDetails = "Data: " + query["data"]+
-		   "<hr />status: " + query["status"];
+	   alert("error");
+     //$scope.ResponseDetails = "Data: " + query["data"]+
+		 //  "<hr />status: " + query["status"];
    });
 
 
