@@ -99,12 +99,24 @@ function Autentication_get_sessionId() {
     xmlhttp.setRequestHeader('Content-Type', 'text/xml');
 	xmlhttp.send(soapRequest());
 */
-var req = {
+ 
+let query = {
 	method: 'POST',
 	url: url_autentication2,
 	data: soapRequest(),
 	datatype: "text/xml; charset=utf-8",
   }
+
+   $http.post(query)
+   .success(function (query) {
+	   $scope.PostDataResponse = query["data"];
+   })
+   .error(function (query) {
+	   $scope.ResponseDetails = "Data: " + query["data"]+
+		   "<hr />status: " + query["status"] +
+		   "<hr />headers: " + query["header"] +
+		   "<hr />config: " + query["config"];
+   });
 
 
 }
