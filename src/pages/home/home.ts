@@ -113,9 +113,7 @@ let query = {
    })
    .error(function (query) {
 	   $scope.ResponseDetails = "Data: " + query["data"]+
-		   "<hr />status: " + query["status"] +
-		   "<hr />headers: " + query["header"] +
-		   "<hr />config: " + query["config"];
+		   "<hr />status: " + query["status"];
    });
 
 
