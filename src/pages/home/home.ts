@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {PagePersonnellePage} from '../page-personnelle/page-personnelle'
-//import * as '../../app/soapclient.js'
 
 declare var atlan: any; 
 
